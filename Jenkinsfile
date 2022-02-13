@@ -5,7 +5,7 @@ pipeline{
         stage("Cloning git"){
             steps{
             
-                git credentialsId: 'bitcred', url: 'https://scr.bsh-sdd.com/scm/ggshc/live-score-poc.git'
+                git credentialsId: 'git', url: 'https://github.com/susrutap/POC.git'
         }
         }      
         stage("Docker Build"){
